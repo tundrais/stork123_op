@@ -6,16 +6,6 @@
 from __future__ import annotations
 
 
-def generate_all_combinations(n: int, k: int) -> list[list[int]]:
-    """
-    >>> generate_all_combinations(n=4, k=2)
-    [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
-    """
-
-    result: list[list[int]] = []
-    create_all_state(1, n, k, [], result)
-    return result
-
 
 def create_all_state(
     increment: int,
